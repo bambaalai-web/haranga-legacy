@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Haranga Legacy — Editions</title>
+<link rel="stylesheet" href="/haranga-legacy/assets/css/styles.css">
+</head><body>
+<header class="header"><div class="container">
+<h1>Haranga Legacy — Limited Editions (1/1000)</h1>
+<div class="small">merchmongolia.art/haranga-legacy</div>
+</div></header>
+<main class="container">
+<div class="card"><h2>About</h2><p>Each edition page has an audio track and displays the owner’s name after the first claim.</p></div>
+<div class="card"><h2>Browse (first 24)</h2><div class="grid" id="grid"></div></div>
+</main>
+<footer class="container small">© Merch Mongolia · Haranga Legacy</footer>
+<script>
+const grid=document.getElementById('grid');
+for(let i=1;i<=24;i++){const num=String(i).padStart(4,'0');const a=document.createElement('a');a.href=`/haranga-legacy/editions/${num}/`;a.className='button';a.textContent=`Edition ${num}`;grid.appendChild(a);}
+</script>
+</body></html>
