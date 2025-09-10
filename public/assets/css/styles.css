@@ -1,0 +1,18 @@
+
+:root { --max: 920px; }
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;margin:0;padding:0;line-height:1.5;background:#0b0b0b;color:#eaeaea}
+.header{padding:28px 16px;border-bottom:1px solid #222;background:linear-gradient(180deg,#111, #0b0b0b)}
+.container{max-width:var(--max);margin:0 auto;padding:16px}
+h1,h2,h3{line-height:1.2;margin:0 0 .5rem}
+h1{font-size:clamp(24px,4vw,36px)}
+h2{font-size:clamp(18px,3vw,24px);opacity:.9}
+.card{background:#131313;border:1px solid #222;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.button{display:inline-block;padding:10px 14px;border-radius:12px;border:1px solid #333;text-decoration:none;color:#eaeaea}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.edition-pill{display:inline-block;background:#1e1e1e;border:1px solid #2a2a2a;padding:4px 10px;border-radius:999px;font-size:14px}
+audio{width:100%;margin-top:8px}
+footer{opacity:.7;padding:32px 16px;border-top:1px solid #222;margin-top:24px}
+a{color:#9fdcff}
+.qr{max-width:220px;display:block}
+.small{font-size:12px;opacity:.8}
