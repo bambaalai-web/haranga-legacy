@@ -106,9 +106,17 @@
   // ----- Hidden autoplay audio -----
   const audio = document.getElementById('bg-audio');
   if (audio) {
-    const tryPlay = () => audio.play().catch(() => {});
-    tryPlay(); // шууд оролдох
+    const tryPlay = async () => {
+    try {
+		await audio.play();
+		} catch {}
+	};
+	tryPlay();
     document.addEventListener('click', tryPlay, { once: true });      // хориглолттой бол эхний click дээр
     document.addEventListener('touchstart', tryPlay, { once: true }); // mobile fallback
-  }
-})();
+	setTimeout(() => {
+		if (audio.muted) {
+			audio.muted = false;
+    }
+  }, 3000);
+}
